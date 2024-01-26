@@ -1,0 +1,31 @@
+<div class="pt-5  vh-100">
+
+  {{#if error}}
+  <p>{{error}}</p>
+  {{else}}
+  <h2>Todos los productos</h2>
+
+  <div class="row pt-4">
+    {{#each products}}
+    <div class="col mb-4" style="max-width: 300px;">
+      <div class="card border-black" style="height: 100%; ">
+        <div class="card-body col justify-content-center" style="height: 50%;">
+          <image class="w-50 mb-4" src={{this.thumbnail}}></image>
+          <h5 class="card-title">{{this.title}}</h5>
+          <p class="card-text">{{this.description}}</p>
+          <p class="card-text">${{this.price}}</p>
+        </div>
+        <form class="button-add" action="/api/carts/1/products/{{this.id}}" method="post">
+          <input type="hidden" value="{{this.id}}">
+          <button class="btn btn-success" type="submit">Agregar al carrito</button>
+          
+        </form>
+      </div>
+
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+
+
+</div>

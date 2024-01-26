@@ -1,0 +1,28 @@
+.modal-no-background.modal {
+  background: transparent !important;
+}
+
+.modal-no-background .modal-dialog {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  max-width: 100%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.card-body {
+display: flex !important;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.button-add{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}

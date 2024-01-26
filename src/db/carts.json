@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "products": [
+      {
+        "id": 1,
+        "title": "prueba1",
+        "description": "prueba1",
+        "price": "200",
+        "thumbnail": "prueba1.jpg",
+        "code": "123",
+        "quantity": 2
+      }
+    ]
+  }
+]
